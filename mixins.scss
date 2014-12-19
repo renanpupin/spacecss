@@ -1,0 +1,189 @@
+//mixins.scss
+
+@mixin font-size($size) {
+    font-size: $size;
+    line-height: $base-line-height*$size;
+    margin: ($size / 2) 0 ($size / 2.5) 0;
+}
+
+// mixin border-radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// mixin box-shadow
+@mixin box-shadow ($values...) {
+    -webkit-box-shadow: $values;
+            box-shadow: $values;
+}
+
+// mixin box-sizing
+@mixin box-sizing ($type: border-box) {
+    -webkit-box-sizing: $type;
+       -moz-box-sizing: $type;
+            box-sizing: $type;
+}
+
+// mixin opacity
+@mixin opacity ($value: 1) {
+    $value-percentage : $value * 100;
+    opacity: $value;
+    filter: alpha(opacity=$value-percentage);
+}
+
+// mixin text-shadow
+@mixin text-shadow($x, $y, $blur, $color) {
+    text-shadow: $x $y $blur $color;
+}
+
+// mixin user-select
+@mixin user-select() {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+//mixin center
+@mixin center(){
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
+}
+
+// mixin transition
+@mixin transition($time) {
+  -webkit-transition: $time;
+  -moz-transition: $time;
+  -o-transition: $time;
+  -ms-transition: $time;
+  transition: $time;
+}
+
+//mixin clearfix
+@mixin clearfix() {
+  *zoom: 1;
+  &:before, &:after{
+    content: "";
+    display: table;
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// function calculateContainerWidth
+@function calculateContainerWidth($width, $gutter){
+  @return $width - ($gutter * 2)
+}
+
+//mixin media-query
+@mixin media-query($media-query) {
+  $breakpoint-found: false;
+  @each $breakpoint in $breakpoints {
+    $name: nth($breakpoint, 1);
+    $rule: nth($breakpoint, 2);
+    $container_size: nth($breakpoint, 3);
+    @if $media-query == $name and $rule {
+      $breakpoint-found: true;
+      @media only screen and #{$rule} {
+        [class*='grid-#{$name}-']{
+          float: left;
+        }
+        @if $name == "s" or $name == "m" or $name == "l"{
+          .container {
+            width: unquote(calculateContainerWidth($container_size, $gutter_width));
+          }
+        }
+        $index: 1;
+        @each $width in $widths {
+          $width_value: nth($width, 2);
+          .grid-#{$name}-#{$index}{
+            width: unquote($width_value);
+            padding-right: $gutter_width;
+            padding-left: $gutter_width;
+            position: relative;
+            min-height: 1px;
+          }
+          .grid-#{$name}-offset-#{$index}{
+            margin-left: unquote($width_value);
+          }
+          .grid-#{$name}-pull-#{$index}{
+            right: unquote($width_value);
+          }
+          .grid-#{$name}-push-#{$index}{
+            left: unquote($width_value);
+          }
+          $index: $index + 1;
+        }
+      }
+    }
+  }
+  @if $breakpoint-found == false {
+    @warn "Breakpoint '#{$media-query}'' does not exist"
+  }
+}
+
+//mixin all-grid
+@mixin all-grid() {
+  $index: 1;
+  @each $width in $widths {
+    $width_value: nth($width, 2);
+    .grid-all-#{$index}{
+      width: unquote($width_value);
+      padding-right: $gutter_width;
+      padding-left: $gutter_width;
+      position: relative;
+      min-height: 1px;
+    }
+    .grid-all-offset-#{$index}{
+      margin-left: unquote($width_value);
+    }
+    .grid-all-pull-#{$index}{
+      right: unquote($width_value);
+    }
+    .grid-all-push-#{$index}{
+      left: unquote($width_value);
+    }
+    $index: $index + 1;
+  }
+}
+
+// Background sizing
+@mixin background-size($size) {
+  -webkit-background-size: unquote($size);
+     -moz-background-size: unquote($size);
+       -o-background-size: unquote($size);
+          background-size: unquote($size);
+}
+
+// Transformations
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+     -moz-transform: rotate($degrees);
+      -ms-transform: rotate($degrees);
+       -o-transform: rotate($degrees);
+          transform: rotate($degrees);
+}
+//mixin scale
+@mixin scale($ratio) {
+  -webkit-transform: scale($ratio);
+     -moz-transform: scale($ratio);
+      -ms-transform: scale($ratio);
+       -o-transform: scale($ratio);
+          transform: scale($ratio);
+}
+//mixin translate
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+     -moz-transform: translate($x, $y);
+      -ms-transform: translate($x, $y);
+       -o-transform: translate($x, $y);
+          transform: translate($x, $y);
+}

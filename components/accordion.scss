@@ -1,0 +1,71 @@
+/*========COLOR PRESETS=========*/
+$text-color: #757575;
+$background-color: #fff;
+$border-color: #ddd;
+$padding: $base-padding;
+/*============ACCORDION============*/
+.accordion{
+  border: 1px solid #ddd;
+  border-bottom: 0px;
+  padding: 0;
+  // margin-bottom: $padding;
+  li{
+    list-style: none;
+  }
+}
+.accordion-header{
+  display: block;
+  cursor: pointer;
+  background-color: $background-color;
+  border-bottom: 1px solid $border-color;
+  padding: $padding ($padding*2);
+}
+.accordion-body{
+  display: none;
+  padding: ($padding*2);
+  overflow: hidden;
+  background-color: $background-color;
+  border-bottom: 1px solid $border-color;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.toggleAccordion{
+  float: right;
+  padding-left: 5px;
+  margin-top: 5px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    display: block;
+    width: 9px;
+    height: 1px;
+    background: #757575;
+    z-index: 99;
+    -webkit-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 1px;
+    display: block;
+    width: 1px;
+    height: 9px;
+    -webkit-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    background: #757575;
+    z-index: 99;
+  }
+}
+/*==============MINUS SYMBOL==========*/
+.open .toggleAccordion::after{
+  // display: none;
+}
+/*==============CLOSE SYMBOL==========*/
+.open .toggleAccordion::after, .open .toggleAccordion::before{
+  -webkit-transform: rotate(135deg);
+}

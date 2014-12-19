@@ -1,0 +1,15 @@
+/*
+clearfix.scss
+*/
+
+.clearfix {
+  @include clearfix();
+}
+
+* {
+    &,
+    &:before,
+    &:after {
+        @include box-sizing(border-box);
+    }
+}

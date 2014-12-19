@@ -1,0 +1,101 @@
+html{
+    min-height: 100%;
+    font-size: 100%;
+}
+body{
+    font-size: 1rem;
+    line-height: $base-line-height;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+a{
+    text-decoration: none;
+}
+
+//placeholder
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: $placeholder-color;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $placeholder-color;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $placeholder-color;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: $placeholder-color;
+}
+
+//selection
+::selection{
+    background-color: $selection-color;
+    color: #fff;
+}
+::-moz-selection{
+    background-color: $selection-color;
+    color: #fff;
+}
+
+//blink animation
+.blinker{
+    -webkit-animation: blink 7s infinite;
+        animation: blink 7s infinite;
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes blink {
+    0%   {opacity: 0;}
+    25%   {opacity: 0.5;}
+    50%   {opacity: 1;}
+    75%   {opacity: 0.5;}
+    100% {opacity: 0;}
+}
+
+/* Standard syntax */
+@keyframes blink {
+    0%   {opacity: 0;}
+    25%   {opacity: 0.5;}
+    50%   {opacity: 1;}
+    75%   {opacity: 0.5;}
+    100% {opacity: 0;}
+}
+
+//parallax
+.parallax-background{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: rgba(0,0,0,0.3);
+    @include background-size("cover");
+}
+.parallax {
+    position: relative !important;
+    z-index: 1 !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    @include background-size("cover");
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}

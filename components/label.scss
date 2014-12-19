@@ -1,0 +1,39 @@
+//label
+.label {
+    display: inline;
+    line-height: $base-line-height*.8rem;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    font-size: .8rem;
+    padding: 2px 5px;
+    border-radius: 3px;
+    &-default{
+        background-color: #777;
+    }
+    &-transparent-default{
+        border: 1px solid black;
+    }
+    &-success{
+        background-color: #5cb85c;
+    }
+    &-transparent-success{
+        border: 1px solid #5cb85c;
+        color: #5cb85c;
+    }
+    &-warning{
+        background-color: #E2A41F;
+    }
+    &-transparent-warning{
+        border: 1px solid #E2A41F;
+        color: #E2A41F;
+    }
+    &-danger{
+        background-color: #d43f3a;
+    }
+    &-transparent-danger{
+        border: 1px solid #d43f3a;
+        color: #d43f3a;
+    }
+}

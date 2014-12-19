@@ -1,0 +1,45 @@
+// font vars
+$font-size: 16px;
+$line-height: 24px;
+$base-line-height: 1.4;
+$base-padding: 15px;
+
+//headers
+$h1-fontsize: 4.1rem;
+$h2-fontsize: 3.21rem;
+$h3-fontsize: 2.42rem;
+$h4-fontsize: 1.71rem;
+$h5-fontsize: 1.32rem;
+$h6-fontsize: 1rem;
+
+// grid vars
+$grid-columns: 12;
+$gutter_width: $base-padding;
+$grid-large-width-breakpoint: 1200px;
+$grid-medium-width-breakpoint: 992px;
+$grid-small-width-breakpoint: 768px;
+$grid-xsmall-width-breakpoint: 768px;
+$breakpoints: (
+    'xs' '(max-width: #{$grid-xsmall-width-breakpoint})' 768px, // xsmall
+    's'  '(min-width: #{$grid-small-width-breakpoint})' 780px, // small
+    'm'  '(min-width: #{$grid-medium-width-breakpoint})' 1000px, // medium
+    'l'  '(min-width: #{$grid-large-width-breakpoint})' 1200px // large
+);
+$widths: (
+  '1' '8.33333333%',
+  '2' '16.66666667%',
+  '3' '25%',
+  '4' '33.3333333%',
+  '5' '41.66666667%',
+  '6' '50%',
+  '7' '58.33333333%',
+  '8' '66.66666667%',
+  '9' '75%',
+  '10' '83.33333333%',
+  '11' '91.66666667%',
+  '12' '100%'
+);
+
+//color
+$placeholder-color: #ffffff;
+$selection-color: rgba(21, 176, 206, 1);

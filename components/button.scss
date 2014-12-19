@@ -1,0 +1,46 @@
+// button
+.btn{
+    display: inline-block;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    outline: 0;
+    @include user-select();
+    &-xsmall{
+        padding: 1px 5px;
+        font-size: 12px;
+    }
+    &-small{
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    &-large{
+        font-size: 18px;
+        padding: 10px 14px;
+    }
+    &-success {
+        color: #fff;
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+        outline-color: green;
+    }
+    &-warning {
+        color: #fff;
+        background-color: #E2A41F;
+        border-color: #E2A41F;
+        outline-color: #F5AB0C;
+    }
+    &-danger {
+        color: #fff;
+        background-color: #d43f3a;
+        border-color: #d43f3a;
+        outline-color: red;
+    }
+}

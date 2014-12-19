@@ -1,0 +1,26 @@
+//alert
+.alert {
+  padding: 15px;
+  // margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  &-success{
+    background-color: lighten(#5cb85c, 25%);
+    border-color: #5cb85c;
+    color: darken(#5cb85c, 15%);
+  }
+  &-warning{
+    background-color: lighten(#E2A41F, 25%);
+    border-color: #E2A41F;
+    color: darken(#E2A41F, 15%);
+  }
+  &-danger{
+    background-color: lighten(#d43f3a, 25%);
+    border-color: #d43f3a;
+    color: darken(#d43f3a, 15%);
+  }
+}
+
+//<div class="alert alert-success" role="alert">Lorem Ipsum</div>
+//<div class="alert alert-warning" role="alert">Lorem Ipsum</div>
+//<div class="alert alert-danger" role="alert">Lorem Ipsum</div>
