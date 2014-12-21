@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <!--CUSTOM META TAGS-->
+        <meta charset="utf-8"/>
+        <meta name="robots" content="index, follow"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Brandy - Responsive thematic map">
+        <meta name="keywords" content="HTML5,CSS3,Theme,Responsive,Thematic map, Brandy,SpaciumWeb">
+        <meta name="author" content="Spacium Web">
+        <!--END OF CUSTOM META TAGS-->
+        
+        <title>SpaceCSS</title>
+
+        <!--STYLES-->
+        <link rel="stylesheet" type="text/css" href="demo/css/demo.css">
+        <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+        <!--END OF STYLES-->
+
+    </head>
+
+    <body id="home">
+
+        <div class="title-outer">
+            <div class="title">
+                SPACE CSS
+            </div>
+        </div>
+
+        <nav id="navbarMenu" class="navbar" role="navigation">
+            <div class="container">
+                <div class="navbarHeader">
+                    <div class="toggleMenu"></div>
+                    <div id="brand"><a href="#">S</a></div>
+                </div>
+                <ul role="menu">
+                    <li><a href="#" id="#home">Home</a></li>
+                    <li><a href="#" id="#spacecss">About</a></li>
+                    <li><a href="#" id="#typography">Typography</a></li>
+                    <li class="submenu"><a href="#" id="#">Components</a>
+                        <ul>
+                            <li><a href="#" id="#labels">Label</a></li>
+                            <li><a href="#" id="#buttons">Button</a></li>
+                            <li><a href="#" id="#alerts">Alert</a></li>
+                            <li><a href="#" id="#progress-bars">Progress</a></li>
+                            <li><a href="#" id="#accordions">Accordion</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" id="#grid">Grid</a></li>
+                    <li><a href="#" id="#semantic-grid">Semantic Grid</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content parallax">
+            <div class="container">
+                
+                <div class="astral">
+
+                    <div class="z-fixer">
+
+                        <section id="spacecss" class="spacecss">
+                            <div class="section-inner">
+                                <div class="section-title">
+                                    <h1>
+                                        <span class="spacecss-logo">SPACE CSS</span>
+                                        <span class="spacecss-version">v0.1</span>
+                                    </h1>
+                                </div>
+                                <div class="section-content">
+                                    <p>Space CSS is a framework that helps you create amazing projects developing responsive. It's made to work on dynamic sizes and help your development to be faster and easier. This framework is built using <a href="http://sass-lang.com/" target="_blank">Sass</a> and you can get started with precompiled CSS or build your own source code. To use Space CSS by the precompiled CSS, all you need to do is download the file "space.css" and import on your HTML file or CSS. </p> Otherwise if you want to build your own code you can change the files and after compile the Sass file <span class="class-highlight">space.scss</span>.
+                                    <p>Space CSS is an open souce project, and you can find the code on <a href="https://github.com/renanpupin/spacecss" target="_blank">GitHub</a>. <!-- If you like it and want to buy me a beer, fell free to do it here... <a href="javascript:this.void(0)">DONATE</a> --></p>
+
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="typography" class="typography">
+                            <div class="section-inner">
+                                <div class="section-title">
+                                    <h1>Typography</h1>
+                                </div>
+                                <div class="section-content">
+                                    <p>The base typography is defined in .rem units. The global font-size is 16px and line-height is 1.4.</p>
+
+                                    <h4>Classes</h4>
+
+                                    <span class="smallest">
+                                      .smallest
+                                    </span>
+                                    <span class="smaller">
+                                      .smaller
+                                    </span>
+                                    <span class="small">
+                                      .small
+                                    </span>
+                                    <span class="big">
+                                      .big
+                                    </span>
+                                    <span class="bigger">
+                                      .bigger
+                                    </span>
+                                    <span class="biggest">
+                                      .biggest
+                                    </span>
+
+                                    <h4>Headers</h4>
+                                    <div class="headers">
+                                        <h1>h1</h1>
+                                        <h2>h2</h2>
+                                        <h3>h3</h3>
+                                        <h4>h4</h4>
+                                        <h5>h5</h5>
+                                        <h6>h6</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="labels" class="labels">
+                            <div class="section-inner">
+                                <div class="section-title">
+                                    <h1>Label</h1>
+                                </div>
+
+                                <div class="section-content">
+
+                                    <h4>Default</h4>
+                                    <span class="label label-default">default</span>
+                                    <span class="class-highlight">.label .label-default</span>
+                                    <span class="label label-transparent-default">default</span>
+                                    <span class="class-highlight">.label .label-transparent-default</span>
+
+                                    <h4>Success</h4>
+                                    <span class="label label-success">success</span>
+                                    <span class="class-highlight">.label .label-success</span>
+                                    <span class="label label-transparent-success">success</span>
+                                    <span class="class-highlight">.label .label-transparent-success</span>
+
+                                    <h4>Warning</h4>
+                                    <span class="label label-warning">warning</span>
+                                    <span class="class-highlight">.label .label-warning</span>
+                                    <span class="label label-transparent-warning">warning</span>
+                                    <span class="class-highlight">.label .label-transparent-warning</span>
+
+                                    <h4>Danger</h4>
+                                    <span class="label label-danger">danger</span>
+                                    <span class="class-highlight">.label .label-danger</span>
+                                    <span class="label label-transparent-danger">danger</span>
+                                    <span class="class-highlight">.label .label-transparent-danger</span>
+
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="buttons" class="buttons">
+                            <div class="section-inner">
+                                <div class="section-title">
+                                    <h1>Button</h1>
+                                </div>
+
+                                <div class="section-content">
+                                
+                                    <h4>Buttons Size</h4>
+                                    <span class="default-buttons">
+                                        <button type="button" class="btn btn-xsmall">btn-xsmall</button>
+                                        <button type="button" class="btn btn-small">btn-small</button>
+                                        <button type="button" class="btn">btn-default</button>
+                                        <button type="button" class="btn btn-large">btn-large</button>
+                                    </span>
+
+                                    <h4>Success</h4>
+                                    <button type="button" class="btn btn-success">Success</button>
+                                    <span class="class-highlight">.btn .btn-success</span>
+
+                                    <h4>Warning</h4>
+                                    <button type="button" class="btn btn-warning">Warning</button>
+                                    <span class="class-highlight">.btn .btn-warning</span>
+
+                                    <h4>Danger</h4>
+                                    <button type="button" class="btn btn-danger">Danger</button>
+                                    <span class="class-highlight">.btn .btn-danger</span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="alerts" class="alerts">
+
+                            <div class="section-inner">
+                                <div class="section-title">
+                                    <h1>Alert</h1>
+                                </div>
+
+                                <div class="section-content">
+                                    <h4>Success</h4>
+                                    <div class="alert alert-success" role="alert">Lorem Ipsum</div>
+                                    <span class="class-highlight">.alert .alert-success</span>
+                                    <h4>Warning</h4>
+                                    <div class="alert alert-warning" role="alert">Lorem Ipsum</div>
+                                    <span class="class-highlight">.alert .alert-warning</span>
+                                    <h4>Danger</h4>
+                                    <div class="alert alert-danger" role="alert">Lorem Ipsum</div>
+                                    <span class="class-highlight">.alert .alert-danger</span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="progress-bars" class="progress-bars">
+                            <div class="section-inner">
+                                <div class="section-title">
+                                    <h1>Progress</h1>
+                                </div>
+
+                                <div class="section-content">
+
+                                    <p>To use progress bar, you just need to create a element with <span class="class-highlight">.progress</span> class and inside this element create another element with <span class="class-highlight">.progress-bar</span> class. Don't forget to set the width of the <span class="class-highlight">.progress-bar</span> (0% to 100%).</p>
+
+                                    <h4>Default</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%;">
+                                            60%
+                                        </div>
+                                    </div>
+                                    <span class="class-highlight">.progress-bar</span>
+
+                                    <h4>Success</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" style="width: 40%">
+                                            40%
+                                        </div>
+                                    </div>
+                                    <span class="class-highlight">.progress-bar .progress-bar-success</span>
+
+                                    <h4>Warning</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar"style="width: 60%">
+                                            60%
+                                        </div>
+                                    </div>
+                                    <span class="class-highlight">.progress-bar .progress-bar-warning</span>
+
+                                    <h4>Danger</h4>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar"style="width: 100%">
+                                            100%
+                                        </div>
+                                    </div>
+                                    <span class="class-highlight">.progress-bar .progress-bar-danger</span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="accordions" class="accordions">
+                            <div class="section-inner">
+                                <div class="section-title">
+                                    <h1>Accordion</h1>
+                                </div>
+
+                                <div class="section-content">
+                                    <h4>Collapsible</h4>
+                                    <ul id="accordion1" class="accordion">
+                                        <li class="accordion-content">
+                                            <div class="accordion-header">
+                                                Lorem Ipsum
+                                                <div class="toggleAccordion"></div>
+                                            </div>
+                                            <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+                                        </li>
+                                        <li class="accordion-content">
+                                            <div class="accordion-header">
+                                                Lorem Ipsum
+                                                <div class="toggleAccordion"></div>
+                                            </div>
+                                            <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+                                        </li>
+                                        <li class="accordion-content">
+                                            <div class="accordion-header">
+                                                Lorem Ipsum
+                                                <div class="toggleAccordion"></div>
+                                            </div>
+                                            <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+                                        </li>
+                                    </ul>
+
+                                    <h4>Expansible</h4>
+                                    <ul id="accordion2" class="accordion">
+                                        <li class="accordion-content">
+                                            <div class="accordion-header">
+                                                Lorem Ipsum
+                                                <div class="toggleAccordion"></div>
+                                            </div>
+                                            <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+                                        </li>
+                                        <li class="accordion-content">
+                                            <div class="accordion-header">
+                                                Lorem Ipsum
+                                                <div class="toggleAccordion"></div>
+                                            </div>
+                                            <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+                                        </li>
+                                        <li class="accordion-content">
+                                            <div class="accordion-header">
+                                                Lorem Ipsum
+                                                <div class="toggleAccordion"></div>
+                                            </div>
+                                            <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <section id="grid" class="grid">
+                            <div class="section-inner">
+                                <div class="section-title">
+                                    <h1>Grid</h1>
+                                </div>
+
+                                <div class="section-content">
+
+                                    <p>The grid system is based on 12 columns (one column = 100% width/12), to use the grid you just need to put the class <span class="class-highlight">.grid-DEVICE-COLUMN_NUMBER</span> where <span class="class-highlight">DEVICE</span> is the size of the device ('xs' to extra small devices like phones, 's' to small devices like tablets, 'm' to medium devices like desktops or notebooks and 'l' to large devices like large desktops) and <span class="class-highlight">COLUMN_NUMBER</span> is the number of columns.</p>
+                                    <p>You can use <span class="class-highlight">.container</span> class to put the content inside a div with margins and a calculated gutter padding.
+                                    Otherwise the <span class="class-highlight">.container-full</span> class is used to put the content inside a full width div.
+                                    Use <span class="class-highlight">.row</span> class to put your content in one line (if the size of the content is smaller than your window width).</p>
+
+                                    <div class="row">
+                                        <div class="grid-m-12 grid-s-12 grid-xs-12">
+                                            <div class="cell-content">
+                                              grid-m-12
+                                            </div>
+                                        </div>
+                                        <div class="grid-m-1 grid-s-1 grid-xs-1">
+                                            <div class="cell-content">
+                                              grid-m-1
+                                            </div>
+                                        </div>
+                                        <div class="grid-m-11 grid-s-11 grid-xs-11">
+                                            <div class="cell-content">
+                                              grid-m-11
+                                            </div>
+                                        </div>
+                                          
+                                        <div class="grid-m-2 grid-s-2 grid-xs-2">
+                                            <div class="cell-content">
+                                              grid-m-2
+                                            </div>
+                                        </div>
+                                        <div class="grid-m-10 grid-s-10 grid-xs-10">
+                                            <div class="cell-content">
+                                              grid-m-10
+                                            </div>
+                                        </div>
+                                          
+                                        <div class="grid-m-3 grid-s-3 grid-xs-3">
+                                            <div class="cell-content">
+                                              grid-m-3
+                                            </div>
+                                        </div>
+                                        <div class="grid-m-9 grid-s-9 grid-xs-9">
+                                            <div class="cell-content">
+                                              grid-m-9
+                                            </div>
+                                        </div>
+                                          
+                                        <div class="grid-m-4 grid-s-4 grid-xs-4">
+                                            <div class="cell-content">
+                                              grid-m-4
+                                            </div>
+                                        </div>
+                                        <div class="grid-m-8 grid-s-8 grid-xs-8">
+                                            <div class="cell-content">
+                                              grid-m-8
+                                            </div>
+                                        </div>
+                                          
+                                        <div class="grid-m-5 grid-s-5 grid-xs-5">
+                                            <div class="cell-content">
+                                              grid-m-5
+                                            </div>
+                                        </div>
+                                        <div class="grid-m-7 grid-s-7 grid-xs-7">
+                                            <div class="cell-content">
+                                              grid-m-7
+                                            </div>
+                                        </div>
+                                          
+                                        <div class="grid-m-6 grid-s-6 grid-xs-6">
+                                            <div class="cell-content">
+                                              grid-m-6
+                                            </div>
+                                        </div>
+                                        <div class="grid-m-6 grid-s-6 grid-xs-6">
+                                            <div class="cell-content">
+                                              grid-m-6
+                                            </div>
+                                        </div>
+                                          
+                                        <div class="grid-m-4 grid-s-4 grid-xs-4">
+                                            <div class="cell-content">
+                                              grid-m-4
+                                            </div>
+                                        </div>
+                                        <div class="grid-m-4 grid-s-4 grid-xs-4">
+                                            <div class="cell-content">
+                                              grid-m-4
+                                            </div>
+                                        </div>
+                                        <div class="grid-m-4 grid-s-4 grid-xs-4">
+                                            <div class="cell-content">
+                                              grid-m-4
+                                            </div>
+                                        </div>
+                                          
+                                        <div class="grid-m-4 grid-m-offset-2 grid-s-4 grid-s-offset-2 grid-xs-4 grid-xs-offset-2">
+                                            <div class="cell-content">
+                                              grid-m-4 grid-m-offset-2
+                                            </div>
+                                        </div>
+                                        <div class="grid-m-4 grid-m-offset-0 grid-s-4 grid-s-offset-0 grid-xs-4 grid-xs-offset-0">
+                                            <div class="cell-content">
+                                              grid-m-4 grid-m-offset-0
+                                            </div>
+                                        </div>
+                                              
+                                        <div class="grid-m-9 grid-m-push-3 grid-s-9 grid-s-push-3 grid-xs-9 grid-xs-push-3">
+                                            <div class="cell-content">
+                                              grid-m-9 grid-m-push-3
+                                            </div>
+                                        </div>
+                                        <div class="grid-m-3 grid-m-pull-9 grid-s-3 grid-s-pull-9 grid-xs-3 grid-xs-pull-9">
+                                            <div class="cell-content">
+                                              grid-m-3 grid-m-pull-9
+                                            </div>
+                                        </div>
+                                          
+                                        <div class="grid-m-4 grid-m-push-8 grid-s-4 grid-s-push-8 grid-xs-4 grid-xs-push-8">
+                                            <div class="cell-content">
+                                              grid-m-4 grid-m-push-8
+                                            </div>
+                                        </div>
+                                        <div class="grid-m-8 grid-m-pull-4 grid-s-8 grid-s-pull-4 grid-xs-8 grid-xs-pull-4">
+                                            <div class="cell-content">
+                                              grid-m-8 grid-m-pull-4
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="clearfix"></div>
+
+                        <section id="semantic-grid" class="semantic-grid">
+                            <div class="section-inner">
+                                <div class="section-title">
+                                    <h1>Semantic Grid</h1>
+                                </div>
+
+                                <div class="section-content">
+                                    <p>You can improve your grid semantic using the semantic grid system. All you have to do is to extend the grid class in your semantic class and replace <span class="class-highlight">COLUMNS</span> for your column number.</p>
+                                    
+                                    <h4>Usage</h4>
+                                    <p>Use "xs" to extend the class on extra small devices. <span class="class-highlight">@extend .grid-xs-COLUMNS;</span></p>
+
+                                    <p>Use "s" to extend the class on small devices. <span class="class-highlight">@extend .grid-s-COLUMNS;</span></p>
+
+                                    <p>Use "m" to extend the class on medium devices. <span class="class-highlight">@extend .grid-m-COLUMNS;</span></p>
+
+                                    <p>Use "l" to extend the class on large devices. <span class="class-highlight">@extend .grid-l-COLUMNS;</span></p>
+
+                                    <p>To extend the grid class to all breakpoint sizes, use "all" where you put the device size. <span class="class-highlight">@extend .grid-all-COLUMNS;</span></p>
+
+                                    <h4>Example</h4>
+                                    <p>
+                                        <span class="class-highlight">
+                                            .full{
+                                                @extend .grid-all-12;
+                                            }
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <span class="class-highlight">
+                                            .one-half{
+                                                @extend .grid-all-6;
+                                            }
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <span class="class-highlight">
+                                            .one-third{
+                                                @extend .grid-all-4;
+                                            }
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <span class="class-highlight">
+                                            .one-quarter{
+                                                @extend .grid-all-3;
+                                            }
+                                        </span>
+                                    </p>
+
+
+                                    <div class="row">
+                                        <div class="full">
+                                            <div class="cell-content">
+                                                full width
+                                            </div>
+                                        </div>
+                                        <div class="one-half">
+                                            <div class="cell-content">
+                                                one-half
+                                            </div>
+                                        </div>
+                                        <div class="one-third">
+                                            <div class="cell-content">
+                                                one-third
+                                            </div>
+                                        </div>
+                                        <div class="one-quarter">
+                                            <div class="cell-content">
+                                                one-quarter
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="footer">
+                            <div class="footer-inner">
+                                <span class="spacecss-logo">
+                                    Space CSS
+                                </span>
+                                <span class="spacecss-version">v0.1</span>
+
+                                <span class="github" style="display:none;">
+                                    Github
+                                </span>
+                                <span class="license" style="display:none;">
+                                    License
+                                </span>
+                                <span class="author">
+                                    Made with love by <a class="author-name" href="http://www.renanpupin.com" target="_blank">Renan Pupin</a>
+                                </span>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--SCRIPTS-->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/space.js"></script>
+        <script type="text/javascript" src="demo/js/script.js"></script>
+        <!--END OF SCRIPTS-->
+        
+    </body>
+</html>

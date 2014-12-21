@@ -1,0 +1,218 @@
+@import "../../space";
+
+html{
+  width:100%;
+  height: 100%;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-weight: 300;
+}
+a{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+section{
+    background: rgba(0,0,0,.3);
+    border-radius: 4px;
+    color: white;
+}
+.title{
+    font-weight: 900;
+    font-family: 'Cinzel Decorative', cursive;
+    color: transparent;
+    font-size: 10rem;
+    background: url(../background.jpg) repeat;
+    background-position: 40% 50%;
+    -webkit-background-clip: text;
+    position:relative;
+    text-align:center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.spacecss-logo{
+    font-family: 'Cinzel Decorative', cursive;
+}
+.spacecss-version{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 10px;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+
+.headers{
+    h1,h2,h3,h4,h5,h6{
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .title{
+        font-size: 7rem;
+    }
+}
+@media only screen and (max-width: 580px){
+    .section-title h1{
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 472px){
+    .title{
+        font-size: 5rem;
+    }
+}
+
+.title-outer{
+    background-color: white;
+    padding: 30px;
+    min-height: 100%;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.content{
+    position: relative;
+    width: 100%;
+    background: url(../background.jpg) repeat;
+    background-position: center center;
+    @include background-size("cover");
+}
+#astral{
+    z-index: -1;
+}
+
+.section-title{
+    text-align: center;
+    color: white;
+    h1{
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+}
+.section-inner{
+    padding: 0px 60px 60px 60px;
+}
+.z-fixer{
+    position: relative !important;
+}
+
+.cell-content{
+    background-color: rgba(0,0,0,.35);
+    text-align: center;
+    margin: 7px 0px;
+    padding: 7px;
+    color: white;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.default-buttons .btn{
+    background-color: rgba(0,0,0,.3);
+}
+
+.full{
+    @extend .grid-all-12;
+}
+.one-half{
+    @extend .grid-all-6;
+}
+.one-third{
+    @extend .grid-all-4;
+}
+.one-quarter{
+    @extend .grid-all-3;
+}
+
+.class-highlight{
+    color: #d44950;
+    padding: 2px 5px;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 4px;
+}
+
+.accordion-header, .accordion-body{
+    background-color: rgba(0,0,0,.25);
+}
+.accordion-header, .accordion-body, .accordion{
+    border: 1px solid rgba(0,0,0,.35);
+}
+.toggleAccordion::before, .toggleAccordion::after{
+    background: white;
+}
+
+.progress{
+    background-color: rgba(0,0,0,.3);
+    margin-bottom: 10px;
+}
+.progress-bar{
+    background-color: rgba(51, 122, 183, 0.6);
+    &-success {
+        background-color: rgba(92, 184, 92, 0.6);
+    }
+    &-warning{
+        background-color: rgba(226, 164, 31, 0.6);
+    }
+    &-danger{
+        background-color: rgba(212, 63, 58, 0.6);
+    }
+}
+
+.alert{
+    margin-bottom: 10px;
+    &-success{
+        background-color: rgba(181, 223, 181, 0.8);
+    }
+    &-warning{
+        background-color: rgba(241, 210, 144, 0.8);
+    }
+    &-danger{
+        background-color: rgba(235, 165, 163, 0.8);
+    }
+}
+
+.label-transparent-default{
+    border-color: white;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    .footer-inner{
+        padding: 15px;
+    }
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#navbarMenu{
+    margin-bottom: 0;
+    z-index: 1000;
+    background-color: white;
+    a{
+        border: none;
+    }
+    .navbarHeader{
+        background-color: white;
+    }
+}
+#brand{
+    padding-top: 0;
+    font-family: 'Cinzel Decorative', cursive;
+    a{
+        color: white;
+        font-size: 4rem;
+        font-weight: 900;
+        text-shadow: 2px 2px 6px black;
+    }
+}
